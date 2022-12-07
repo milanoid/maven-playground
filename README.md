@@ -17,3 +17,27 @@ e.g. archetype [maven-archetype-quickstart](https://maven.apache.org/archetypes/
 
 
 `mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4`
+
+## Directory structure
+
+```
+milan@Milans-MacBook-Pro ~/repos/maven-playground/maven-playground (main)$ tree -P pom.xml
+.
+├── parent
+│   └── pom.xml
+├── pom.xml
+└── webapp
+    ├── pom.xml
+    └── src
+        ├── main
+        │   ├── java
+        │   │   └── com
+        │   │       └── milanoid
+        │   └── resources
+        └── test
+            └── java
+                └── com
+                    └── milanoid
+
+12 directories, 3 files
+```
